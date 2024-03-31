@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Portfolio Website - Adith K V</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://kit.fontawesome.com/7fb088b070.js" crossorigin="anonymous"></script>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Adith</span> K V, From Kerala.</h1>
+            </div>
+        </div>
+    </div>
+    <!--   ----------about------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I am Adith KV, as a Computer Science student, I thrive on hackathons and projects. My journey
+                        in the tech world has been a fascinating one, from solving coding challenges to collaborating
+                        with brilliant minds. When Im not immersed in lines of code, you’ll find me following F1 races
+                        with unwavering enthusiasm. The adrenaline rush of high-speed circuits and the precision of
+                        engineering marvels on the track captivate me. But beyond the pixels and race tracks, I’m
+                        equally passionate about connecting with people. Whether it’s discussing the latest tech trends
+                        or sharing stories over a cup of coffee, I believe that meaningful connections drive innovation.
+                        So, lets connect and create something remarkable together!</p>
+                    <div class="tab-tiles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>C</span><br>Proficiency in C language.</li>
+                            <li><span>JAVA</span><br>Proficiency in Java language</li>
+                            <li><span>Adobe Premiere</span><br>Basics Tools and Editing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li> <span>2023</span><br>24-H Hackthon Conducted By IEEE</li>
+                            <li><span>2023</span><br>Internship at GooseBerry Technologies</li>
+                            <li><span>2020-2021</span><br>Coordinator of National Service Scheme </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Middle School</span><br>Chinmaya Vidyalaya, Tripunithura</li>
+                            <li><span>High School</span><br>Model Techincal School, Kaloor</li>
+                            <li><span>College</span><br>TOC H Institute of Science and Technology, Arakkunnam</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   ---------- Services ------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h2>Editing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem rerum molestiae magnam
+                        laudantium</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crosshairs"></i>
+                    <h2>Game Coaching</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem rerum molestiae magnam
+                        laudantium</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem rerum molestiae magnam
+                        laudantium</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i></i>adithkvxid@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 85901-42054</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/ZENZEPHY"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.youtube.com/@madfortech6505"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/adith-k-v-0b8802249/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="images/my-cv.pdf" class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea type="Message" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Adith K V</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxmx6ToR9eKbQWBhZ7sfcc0qfTKPDjIq5p-QqI2UYdRI6PX4kYiCI9D-GW4eubn1TUtSQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Succesfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
